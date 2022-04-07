@@ -8,3 +8,6 @@
 - For nested path like `news/news-title` you ALWAYS need sub folder. You can create a `news-title.js` inside `news` 
   or create a `news-title`  folder with `index.js` in it. Both works.
 - `[fileName.js]` - allows you to create a dynamic page (with route) with different values.
+
+### Hooks
+- `useRouter` - allow extracting value from dynamic route.
