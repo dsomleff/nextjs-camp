@@ -9,5 +9,6 @@
   or create a `news-title`  folder with `index.js` in it. Both works.
 - `[fileName.js]` - allows you to create a dynamic page (with route) with different values.
 
-### Hooks
+### Hooks and Components
 - `useRouter` - allow extracting value from dynamic route.
+- `Link` - allow to make a link visiting in an SPA way.
