@@ -12,3 +12,4 @@
 ### Hooks and Components
 - `useRouter` - allow extracting value from dynamic route.
 - `Link` - allow to make a link visiting in an SPA way.
+- `_app.js` - special file, to include all layout files (header, footer) in once.
