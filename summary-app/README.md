@@ -17,10 +17,13 @@
 ### Pre Rendering
 - Static generation - build with project for production (html files already prepared and fetched data do not display 
   in a source)
+- Server-Side rendering - do the same but after project was build.
 - `getStaticProps()` function that prepared props for the page. It's called as async, received all needed data 
   and then render the components. Under the hood it runs only on server and never on the client side (during the 
   build process).
 - `revalidate` property that can be return from getStaticProps(). It takes a number as amount of second, that define 
   after which time NextJS will regenerate pre-rendered page with new data (useful when data changes frequently).  
-- `getServerSideProps()` - do not run with build process, instead always on the server after deployment. Gives 
-  access to `context` variable, that contains request, response data.
+- `getServerSideProps()` - do not run with build process, instead always on the server after deployment.  
+- `context` - Gives access to variable, that contains request, response and other sort of data. Exist for both 
+  getStaticProps(do not have access to res, req) and   getServerSideProps(do have access to res, req).
+- `getStaticPaths()` for dynamic pages. It tells NextJS for which route parameters these pages should be pre-rendered.
