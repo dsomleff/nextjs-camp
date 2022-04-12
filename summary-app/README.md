@@ -22,5 +22,5 @@
   build process).
 - `revalidate` property that can be return from getStaticProps(). It takes a number as amount of second, that define 
   after which time NextJS will regenerate pre-rendered page with new data (useful when data changes frequently).  
-- Server-Side rendering
-- 
+- `getServerSideProps()` - do not run with build process, instead always on the server after deployment. Gives 
+  access to `context` variable, that contains request, response data.
