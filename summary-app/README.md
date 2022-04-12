@@ -20,5 +20,7 @@
 - `getStaticProps()` function that prepared props for the page. It's called as async, received all needed data 
   and then render the components. Under the hood it runs only on server and never on the client side (during the 
   build process).
+- `revalidate` property that can be return from getStaticProps(). It takes a number as amount of second, that define 
+  after which time NextJS will regenerate pre-rendered page with new data (useful when data changes frequently).  
 - Server-Side rendering
 - 
