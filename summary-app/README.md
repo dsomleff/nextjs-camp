@@ -13,3 +13,12 @@
 - `useRouter` - allow extracting value from dynamic route.
 - `Link` - allow to make a link visiting in an SPA way.
 - `_app.js` - special file, to include all layout files (header, footer) in once.
+
+### Pre Rendering
+- Static generation - build with project for production (html files already prepared and fetched data do not display 
+  in a source)
+- `getStaticProps()` function that prepared props for the page. It's called as async, received all needed data 
+  and then render the components. Under the hood it runs only on server and never on the client side (during the 
+  build process).
+- Server-Side rendering
+- 
