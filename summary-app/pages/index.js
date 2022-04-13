@@ -1,4 +1,6 @@
 import MeetupList from "../components/meetups/MeetupList";
+import {Fragment} from "react";
+import {Head} from "next/document";
 
 const DUMMY_MEETUPS = [
     {
@@ -18,7 +20,15 @@ const DUMMY_MEETUPS = [
 ];
 
 export default function HomePage(props) {
-    return <MeetupList meetups={props.meetups}/>;
+    return (
+        <Fragment>
+            <Head>
+                <title>NextJS Meetups</title>
+                <meta name='title'/>
+            </Head>
+            <MeetupList meetups={props.meetups}/>
+        </Fragment>
+    );
 }
 
 export async function getStaticProps() {
