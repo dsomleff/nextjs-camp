@@ -27,3 +27,9 @@
 - `context` - Gives access to variable, that contains request, response and other sort of data. Exist for both 
   getStaticProps(do not have access to res, req) and   getServerSideProps(do have access to res, req).
 - `getStaticPaths()` for dynamic pages. It tells NextJS for which route parameters these pages should be pre-rendered.
+
+### API Routes
+_Allow building API. Create a request, receive respond. Classic._
+- create `api` folder.
+- file name must be equal end route url. This files always run on the server. So you can use any credentials here 
+  without fear to compromise them.

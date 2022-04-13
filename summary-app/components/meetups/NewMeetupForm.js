@@ -49,7 +49,7 @@ function NewMeetupForm(props) {
             required
             rows='5'
             ref={descriptionInputRef}
-          ></textarea>
+            />
         </div>
         <div className={classes.actions}>
           <button>Add Meetup</button>
