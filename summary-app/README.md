@@ -28,6 +28,9 @@
 - `context` - Gives access to variable, that contains request, response and other sort of data. Exist for both 
   getStaticProps(do not have access to res, req) and   getServerSideProps(do have access to res, req).
 - `getStaticPaths()` for dynamic pages. It tells NextJS for which route parameters these pages should be pre-rendered.
+- `falback` property that returns `getStaticPaths()`, takes care of displaying 404 in your needs. Has settings like 
+  `false` only pre-generated pages will be available; `true`||`'blocking'` will be waiting until newly created page 
+  will be pre-rendered. 
 
 ### API Routes
 _Allow building API. Create a request, receive respond. Classic._
